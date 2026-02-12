@@ -1,0 +1,19 @@
+name: tennis-health-analyzer
+description: 从 Apple Watch + Health Auto Export 导出的 iCloud JSON 中查询和分析网球运动生理数据
+version: "1.0"
+
+permissions:
+  - filesystem_read   # 读取 iCloud 目录下的 JSON 文件
+  - shell_command     # 使用 cat 命令绕过 TCC 权限限制
+
+tags:
+  - tennis
+  - health
+  - apple-watch
+  - doubles
+
+player_profile:
+  handedness: left
+  backhand: one-handed
+  level: NTRP 4.0
+  play_style: doubles
